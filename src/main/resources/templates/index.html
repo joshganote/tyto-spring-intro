@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" th:href="@{styles/style.css}"/>
+
+    <script type="text/javascript" th:src="@{/scripts/jquery.min.js}"></script>
+    <script type="text/javascript" th:src="@{/scripts/app.js}"></script>
+</head>
+<body>
+    <h1>Hi Owls!</h1>
+
+    <form id="employeeSubmitForm">
+    <h2 class="addEmployee">Add Employee</h2>
+    <div class="input">
+        <input type="number"  name="id" placeholder="enter id" class="iDNumber"/><br/>
+        <input type="text"  name="firstName" placeholder="enter first name" class="firstName"/><br/>
+        <input type="text"  name="lastName" placeholder="enter last name" class="lastName"/><br/>
+        <input type="text"  name="position" placeholder="enter position" class="position"/><br/>
+        <input type="text"  name="salary" placeholder="enter salary" class="salary"/><br/>
+        <button type="submit" class="submit">Submit</button>
+    </div>
+    </form>
+    
+    <h2>Employee List</h2>
+    <div class="getEmployee"></div>
+
+</body>
+</html>
